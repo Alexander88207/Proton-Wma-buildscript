@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+git clone git://github.com/FNA-XNA/FAudio.git
+cd FAudio
+mkdir flibitBuild
+cd flibitBuild
+cmake .. -DXNASONG=OFF -DFFMPEG=ON 
+make
+
+
+folder="$(zenity --file-selection --directory --title="Choose Proton install directory")/dist/lib64/"
+
+cp libFAudio.so "$folder"
+
+
