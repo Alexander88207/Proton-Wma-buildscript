@@ -1,16 +1,18 @@
 #!/bin/bash
-
-
+echo -e "\e[40;38;5;82m Installing dependencies for compiling\e[30;48;5;82m\e[0m"
+sudo equo i cmake --ask
+sudo pacman -S cmake
+sudo apt install cmake
+sudo eopkg it cmake
+echo -e "\e[40;38;5;82m Preparing\e[30;48;5;82m\e[0m"
 git clone git://github.com/FNA-XNA/FAudio.git
 cd FAudio
 mkdir flibitBuild
 cd flibitBuild
+echo -e "\e[40;38;5;82m compiling started\e[30;48;5;82m\e[0m"
 cmake .. -DXNASONG=OFF -DFFMPEG=ON 
 make
-
-
 folder="$(zenity --file-selection --directory --title="Choose Proton install directory")/dist/lib64/"
-
 cp libFAudio.so "$folder"
-
+echo -e "\e[40;38;5;82m Done :)\e[30;48;5;82m\e[0m"
 
