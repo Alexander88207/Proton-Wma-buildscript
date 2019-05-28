@@ -14,5 +14,6 @@ cmake .. -DXNASONG=OFF -DFFMPEG=ON
 make
 folder="$(zenity --file-selection --directory --title="Choose Proton install directory")/dist/lib64/"
 cp libFAudio.so "$folder"
+notify-send -i face-smile "Its done!"
 echo -e "\e[40;38;5;82m Done :)\e[30;48;5;82m\e[0m"
 
