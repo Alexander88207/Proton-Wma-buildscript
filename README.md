@@ -1,5 +1,4 @@
-# Proton-Wma-buildscript
-Script to build Faudio with WMA support. Then adds the library to Proton
+# proton-wma-buildscript
 
 <h2>How to use script:</h2>
 
