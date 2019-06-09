@@ -6,7 +6,7 @@
 - cmake
 - make
 
-# How to use that script
+# How to use that script :arrow_down:
 
 ```
 git clone https://github.com/magzu/Proton-Wma-buildscript.git
