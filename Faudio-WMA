@@ -1,9 +1,4 @@
 #!/bin/bash
-echo -e "\e[40;38;5;82m Installing dependencies for compiling\e[30;48;5;82m\e[0m"
-sudo equo i cmake --ask
-sudo pacman -S cmake
-sudo apt install cmake
-sudo eopkg it cmake
 echo -e "\e[40;38;5;82m Preparing\e[30;48;5;82m\e[0m"
 git clone git://github.com/FNA-XNA/FAudio.git
 cd FAudio
