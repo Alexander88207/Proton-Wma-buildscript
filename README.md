@@ -1,11 +1,12 @@
-<h1 align="center">proton-wma-buildscript</a></h1>
-<h5 align="center">A script to build Faudio with WMA support, then adds the library to proton.</h5>
+# proton-wma-buildscript
 
+# Dependencies :syringe:
+- git
+- zenity
+- cmake
+- make
 
-<h1 align="center">Dependencies :syringe:</a></h1>
-<h5 align="center">git, zenity, make, cmake</h5>
-
-# <h1 align="center">How to use that script :arrow_down:</a></h1>
+# How to use that script
 
 ```
 git clone https://github.com/magzu/Proton-Wma-buildscript.git
