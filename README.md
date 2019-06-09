@@ -1,5 +1,3 @@
-# proton-wma-buildscript
-
 # Dependencies :syringe:
 - git
 - zenity
